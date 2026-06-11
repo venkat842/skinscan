@@ -1,0 +1,10 @@
+{
+  "name": "SkinScan",
+  "description": "AI-powered skincare assistant that analyzes skin photos to provide clinical insights, commercial ingredient matches, and natural DIY remedies.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

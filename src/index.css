@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Organic Warm Earth Palette - Natural Tones Spec */
+  --color-brand-cream: #FDFBF7;
+  --color-brand-paper: #FFFFFF;
+  --color-brand-dark: #2D2D2D;
+  --color-brand-sage-50: #FAFAF7;
+  --color-brand-sage-100: #EAE2D5;
+  --color-brand-sage-200: #C8D1C7;
+  --color-brand-sage-500: #8FA88E;
+  --color-brand-sage-600: #769075;
+  --color-brand-sage-800: #465545;
+  --color-brand-clay-50: #FAF6F4;
+  --color-brand-clay-100: #F3EAE5;
+  --color-brand-clay-500: #C58B70;
+  --color-brand-clay-600: #A86F54;
+  --color-brand-clay-800: #6F4531;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-scan: scan 2.5s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0%, 100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 100%;
+    opacity: 0.8;
+  }
+}
+
+/* Custom Base Tweaks */
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-sage-200);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-sage-500);
+}
